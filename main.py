@@ -20,7 +20,13 @@ def main():
 				d = Deck("full")
 				d.randomize()
 
-	d.print_deck()
+		d.print_deck()
+
+		filename = raw_input"Name of file to save to: ")
+
+		text_file = open(filename, "w")
+		text_file.write(d.generate_text())
+		text_file.close()
 	#if sys.argv > 1:
 	#	print "yes"
 
@@ -28,6 +34,8 @@ def main():
 	mode = 1
 
 	print key_input_prompt
+
+	print test2
 
 if __name__ == "__main__":
 	main()

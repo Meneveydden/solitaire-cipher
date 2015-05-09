@@ -94,6 +94,13 @@ class Deck:
 
 		return stream
 
+	def generate_text(self):
+		output = ''
+		for i in range(len(self.order)-1):
+			output += str(self.order[i]) + ", "
+		output += str(self.order[len(self.order)-1])
+		return output
+
 	def print_deck(self):
 		print self.order
 
