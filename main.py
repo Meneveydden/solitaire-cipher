@@ -33,6 +33,15 @@ def main():
 	# mode: 0 for decode, 1 for encode
 	mode = 1
 
+	def interactive():
+		pass
+
+	def encode():
+		pass
+
+	def decode():
+		pass
+
 	print key_input_prompt
 
 	print test2
