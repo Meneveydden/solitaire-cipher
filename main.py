@@ -8,19 +8,20 @@ import sys
 def main():
 
 	# random deck generator
-	if sys.argv[1] == "generate":
-		if len(sys.argv) == 2:
-			d = Deck("full")
-			d.randomize()
-		else:
-			if sys.argv[2] == "half":
-				d = Deck("half")
-				d.randomize()
-			elif sys.argv[2] == "full":
+	def generate():
+		if sys.argv[1] == "generate":
+			if len(sys.argv) == 2:
 				d = Deck("full")
 				d.randomize()
+			else:
+				if sys.argv[2] == "half":
+					d = Deck("half")
+					d.randomize()
+				elif sys.argv[2] == "full":
+					d = Deck("full")
+					d.randomize()
 
-		d.print_deck()
+			d.print_deck()
 
 		filename = raw_input"Name of file to save to: ")
 
