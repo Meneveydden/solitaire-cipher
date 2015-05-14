@@ -28,8 +28,6 @@ def main():
 		text_file = open(filename, "w")
 		text_file.write(d.generate_text())
 		text_file.close()
-	#if sys.argv > 1:
-	#	print "yes"
 
 	# mode: 0 for decode, 1 for encode
 	mode = 1
